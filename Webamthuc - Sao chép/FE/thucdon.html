@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực Đơn</title>
+    <link rel="stylesheet" href="thucdon.css">
+</head>
+<body>
+    <div id="header">
+        <a href="#" class="logo">
+            <img src="./image/Ảnh chụp màn hình 2024-06-16 181756.png" alt="Logo" width="120px">
+        </a>
+        <div id="menu">
+            <nav>
+                <a href="index.html">Trang chủ</a>
+                <a href="sanpham.html">Sản phẩm</a>
+                <a href="thucdon.html" onclick="showSection('thucdon')">Thực Đơn</a>
+                <a href="dattiec.html">Đặt Tiệc</a>
+                <a href="blog.html">Blog</a>
+                <a href="lienhe.html">Liên hệ</a>
+            </nav>
+        </div>
+        <div id="actions">
+            <div id="user">
+                <a href="user.html">
+                    <img src="./image/user.png" alt="User">
+                </a>
+            </div>
+            <div id="cart">
+                <a href="#">
+                    <img src="./image/cart.png" alt="Cart"> 
+                </a>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="menu-section">
+        <div>
+            <center><h1>Thực Đơn </h1></center>
+            <img src="./imgthucdon/menu-hero.png">
+        </div>
+        <div class="menu-category">
+            <h1> Món Nướng </h1>
+            <img src="./imgthucdon/nuong.png">
+            <P class="item"> 
+                Cá trứng nướng <br> 
+                Xương cá hồi nướng <br> 
+                Mực trứng nướng muối ớt<br> 
+                Cánh gà nướng mật ong<br> 
+                Chân gà nướng quế<br> 
+                Bò Mỹ nướng Hawaii ăn kèm khoai tây bỏ lò<br> 
+                Sò méo nướng mỡ hành<br> 
+                Ốc nhồi nướng sả<br> 
+                Hàu nướng mỡ hành<br> 
+                Móng tay nướng sốt hải sản<br> 
+                Bò bít tết + Salad rau vườn<br> 
+                Ốc hương nướng<br> 
+                Vịt quay Bắc Kinh<br>
+            </P>
+        </div>
+
+
+        <div class="menu-category">
+            <h1> Món Súp </h1>
+            <img src="./imgthucdon/soup-1-300x225.png">
+            <P class="item">  
+                Súp gà<br>
+                Súp cá hồi<br>
+                Súp bí đỏ ăn kèm croutons<br>
+            </P>
+        </div>
+
+
+
+        <div class="menu-category">
+            <h1> Bánh MỲ </h1>
+            <img src="./imgthucdon/bmy.png">
+            <P class="item">  
+                Bánh mỳ chuột<br>
+                Bánh mỳ gối<br>
+                Bánh mỳ bơ tỏi<br>
+                Đường – Sữa<br>
+                Xúc xích tỏi<br>
+            </P>
+        </div>
+
+
+
+        <div class="menu-category">
+            <h1> món chiên </h1>
+            <img src="./imgthucdon/chien-300x225.png">
+            <P class="item">  
+                Da cá hồi chiên phong sa<br>
+                Chân gà chiên mắm<br>
+                Gà lắc phomai<br>
+                Chân giò Philipin<br>
+                Vòng tay cầu hôn<br>
+                Khoai tây chiên<br>
+                Xúc xích chiên<br>
+                Cánh gà chiên mắm<br>
+                Nem chua chiên<br>
+            </P>
+        </div>
+
+
+
+        <div class="menu-category">
+            <h1> món hấp </h1>
+            <img src="./imgthucdon/hap-300x225.png">
+            <P class="item">  
+                Ngao hấp sả<br>
+                Vẹm sốt Thái<br>
+                Tôm sú hấp sả<br>
+                Sò sần hấp<br>
+                Ốc hấp lá chanh<br>
+                Móng tay sốt cari<br>
+                Sò đỏ hấp rượu sake<br>
+                Bề bề hấp<br>
+                Mực tươi hấp<br>
+                Ghẹ hấp<br>
+            </P>
+        </div>
+
+
+
+
+        <div class="menu-category">
+            <h1> món canh </h1>
+            <img src="./imgthucdon/nong-300x225.png">
+            <P class="item">
+                Canh khổ qua<br>
+                Đuôi bò hầm thuốc bắc<br>
+                Bò sốt vang<br>
+                Hoa lơ xào<br>
+                Ngọn susu xào<br>
+                Đậu pháp xào tôm khô<br>
+                Cải thảo xào nấm<br>
+                Cơm rang<br>
+                Miến xào hải sản<br>
+            </P>
+        </div>
+
+
+
+
+
+
+        <div class="menu-category">
+            <h1> món tráng miệng </h1>
+            <img src="./imgthucdon/trang-mieng.png">
+            <P class="item">
+                Hoa quả theo mùa<br>
+                Chè bí đao<br>
+                Chè bưởi<br>
+                Chè xoài<br>
+                Chè đỗ đen<br>
+                Chè khúc bạch<br>
+                Chè sương sa<br>
+                Chè khoai dẻo<br>
+                Chè hoa cau<br>
+                Chè thập cẩm<br>
+                Chè thái<br>
+                Chè đậu xanh<br>
+                Chè Ngô<br>
+                Nếp cẩm<br>
+                Đậu ngự<br>
+                Trân châu trắng, đen<br>
+                Thạch đen<br>
+                Thạch trong<br>
+                Thạch hoa quả<br>
+                Thạch cafe<br>
+                Đậu hũ trân châu<br>
+                Thạch dừa<br>
+                Kem sữa dừa<br>
+                Kem chanh leo<br>
+                Kem socola<br>
+                Kem trà xanh<br>
+                Kem đậu xanh<br>
+                Sữa chua<br>
+                Bánh gato socola<br>
+                Bánh mousse chanh leo<br>
+                Caramen<br>
+                Bánh rán<br>
+                Bánh gio<br>
+                Bánh da lợn<br>
+            </P>
+        </div>
+
+
+        <div class="menu-category">
+            <h1> quầy chợ quê </h1>
+            <img src="./imgthucdon/que.png">
+            <P class="item">
+                Lòng lợn<br>
+                Chân gà luộc<br>
+                Phở bò<br>
+                Bún riêu<br>
+                Bún ốc<br>
+                Chả ốc Hồ Tây<br>
+                Ốc hấp lá gừng<br>
+                Bún chả nem<br>
+                Bánh cuốn chả quế<br>
+                Cháo cá hồi<br>
+                Cháo tôm hùm<br>
+                Nem nướng Nha Trang<br>
+                Xôi chim<br>
+                Khoai luộc<br>
+                Ngô luộc<br>
+                Canh cua + cà<br>
+                Củ quả luộc thập cẩm chấm muối vừng<br>
+                Cá kho tộ<br>
+                Dưa muối<br>
+                Thịt quay<br>
+                Tép rang + đậu tôm hành<br>
+                Cơm trắng<br>
+            </P>
+        </div>
+    </div>
+
+
+
+
+
+     <footer>
+        <div class="footer_main" id="lienhe">
+            <div class="tag">
+                <h1>Liên hệ</h1>
+                <a href="#"><i class="fa-solid fa-house"></i>122 Hoàng Quốc Việt</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>0335095011</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>amthucvn@gmail.com</a>
+            </div>
+
+            <div class="tag">
+                <h1>Hỗ trợ</h1>
+                <a href="#" class="center">Hỏi và đáp</a>
+                <a href="#" class="center">Vận chuyển</a>
+                <a href="#" class="center">Quay lại</a>
+                <a href="#" class="center">Phương thức thanh toán</a>
+            </div>
+
+            <div class="tag">
+                <h1>Các chi nhánh</h1>
+                <a href="#" class="center">Bình xuyên, Vĩnh Phúc</a>
+                <a href="#" class="center">Ba Đình, Hà Nội</a>
+            </div>
+
+            <div class="tag">
+                <h1>Theo dõi chúng tôi</h1>
+                <div class="social_link">
+                    <a href="https://www.facebook.com/huan.ta.7773631/about"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/huanta21/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="tag">
+                <h1>Bản tin</h1>
+                <div class="search_bar">
+                    <input type="text" placeholder="Your email id here" />
+                    <button type="submit">Liên hệ chúng tôi</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="contact-buttons">
+        <a href="https://www.facebook.com/huan.ta.7773631/about" target="_blank">
+          <img src="./image/87ba1a35-9696-4bfd-a417-1fa0e5f2c648.jpg" alt="Facebook">
+        </a>
+        <a href="https://zalo.me/s/qrwallet" target="_blank">
+          <img src="./image/th (1).jpg" alt="Zalo">
+        </a>
+        <a href="tel:+84335095011">
+          <img src="./image/th.jpg" alt="Phone">
+        </a>
+      </div>
+
+
+
+
+</body>
+</html>

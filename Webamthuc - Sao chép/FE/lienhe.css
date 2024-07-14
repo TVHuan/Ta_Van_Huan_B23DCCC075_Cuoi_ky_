@@ -1,0 +1,197 @@
+/* Thiết lập cơ bản cho tất cả các phần tử */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thiết lập cho thân trang */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Thiết lập cho phần bao bọc */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Thiết lập cho phần đầu trang */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Thiết lập cho logo */
+.header .logo img {
+    width: 120px;
+}
+
+/* Thiết lập cho thanh điều hướng */
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Thiết lập cho các liên kết trong thanh điều hướng */
+.header nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng khi rê chuột qua các liên kết */
+.header nav a:hover {
+    background-color: #f18e47;
+    color: #fff;
+}
+
+/* Thiết lập cho phần hành động (đăng nhập, giỏ hàng) */
+.header .actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Thiết lập cho các biểu tượng trong phần hành động */
+.header .actions .item img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Thiết lập cho phần nội dung */
+.content {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Thiết lập cho phần chân trang */
+.footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Thiết lập cho phần chính của chân trang */
+.footer_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f3f1f1;
+}
+
+/* Thiết lập cho từng phần của chân trang */
+.footer_main .tag {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+/* Thiết lập cho tiêu đề của các phần trong chân trang */
+.footer_main .tag h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1c0080;
+}
+
+/* Thiết lập cho các liên kết trong các phần của chân trang */
+.footer_main .tag a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* Hiệu ứng khi rê chuột qua các liên kết trong chân trang */
+.footer_main .tag a:hover {
+    color: #3a929f;
+}
+
+/* Thiết lập cho các liên kết mạng xã hội */
+.footer_main .social_link {
+    display: flex;
+    gap: 10px;
+}
+
+/* Thiết lập cho các biểu tượng mạng xã hội */
+.footer_main .social_link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #333;
+    background-color: #e7e7e7;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hiệu ứng khi rê chuột qua các biểu tượng mạng xã hội */
+.footer_main .social_link a:hover {
+    background-color: #41898b;
+    color: #fff;
+}
+
+/* Thiết lập cho thanh tìm kiếm trong chân trang */
+.footer_main .search_bar {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Thiết lập cho ô nhập liệu trong thanh tìm kiếm */
+.footer_main .search_bar input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Thiết lập cho nút trong thanh tìm kiếm */
+.footer_main .search_bar button {
+    padding: 5px 10px;
+    background-color: #54a9bc;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng khi rê chuột qua nút trong thanh tìm kiếm */
+.footer_main .search_bar button:hover {
+    background-color: #41898b;
+}
+
+
+
+
+.contact-buttons {
+    position: fixed;
+    bottom: 20px; /* Điều chỉnh khoảng cách dưới cùng */
+    right: 20px; /* Điều chỉnh khoảng cách bên phải */
+    z-index: 1000; /* Đảm bảo nút hiển thị trên các phần khác của trang */
+  }
+  
+  .contact-buttons a {
+    display: block;
+    margin-bottom: 10px; /* Điều chỉnh khoảng cách giữa các nút */
+  }
+  
+  .contact-buttons img {
+    width: 50px; /* Điều chỉnh kích thước biểu tượng */
+    height: auto;
+  }

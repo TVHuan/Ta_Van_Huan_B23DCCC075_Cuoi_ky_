@@ -1,0 +1,144 @@
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+#menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: #f18e47;
+    color: #fff;
+}
+
+#actions {
+    display: flex;
+    gap: 20px;
+}
+
+#actions img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Banner */
+#banner {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#banner video {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Introduction */
+#gioithieu {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gioithieu h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+#gioithieu p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Chef Section */
+#daubep {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#daubep h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+#daubep img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buffet Section */
+#buffet {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#buffet h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+#buffet p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Food Section */
+#food {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#food h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+#food img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}

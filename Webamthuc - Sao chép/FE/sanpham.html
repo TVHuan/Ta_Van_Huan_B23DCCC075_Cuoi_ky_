@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Sản Phẩm</title>
+    <link rel="stylesheet" href="sanpham.css">
+</head>
+<body>
+    <div id="header">
+        <a href="#" class="logo">
+            <img src="./image/Ảnh chụp màn hình 2024-06-16 181756.png" alt="Logo" width="120px">
+        </a>
+        <div id="menu">
+            <div >
+                <nav>
+                    <a href="index.html" onclick="showSection('trangchu')">Trang chủ</a>
+                    <a href="sanpham.html" onclick="showSection('sanpham')">Sản phẩm</a>
+                    <a href="thucdon.html" onclick="showSection('thucdon')">Thực Đơn</a>
+                    <a href="dattiec.html" onclick="showSection('dattiec')">Đặt Tiệc</a>
+                    <a href="blog.html" onclick="showSection('blog')">Blog</a>
+                    <a href="lienhe.html" onclick="showSection('lienhe')">Liên hệ</a>
+                </nav>
+            </div>
+        </div>
+        <div id="actions">
+            <div id="user" >
+                <a href="user.html">
+                    <img src="./image/user.png" alt="User">
+                </a>
+            </div>
+            <div id="cart" >
+                <a href="#">
+                    <img src="./image/cart.png" alt="Cart"> 
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="wp-products">
+        <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Tìm kiếm món ăn...">
+            <button onclick="searchProducts()">Tìm kiếm</button>
+        </div>
+        <div id="categories">
+            <ul>
+                <li><a href="#" onclick="filterProducts('all')">Danh mục sản phẩm</a>
+                    <ul class="sub-categories">
+                        <li><a href="#" onclick="filterProducts('tat-ca')">Tất cả các món</a></li>
+                        <li><a href="#" onclick="filterProducts('do-uong')">Đồ uống</a></li>
+                        <li><a href="#" onclick="filterProducts('do-an')">Đồ ăn</a></li>
+                        <li><a href="#" onclick="filterProducts('trang-mieng')">Tráng miệng</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="price-filter">
+            <label for="price-range">Chọn khoảng giá: </label>
+            <input type="range" id="price-range" min="0" max="500000" step="1" value="500000" oninput="updatePriceDisplay(this.value)">
+            <span id="price-display">500.000 VNĐ</span>
+            <button onclick="filterByPrice()">Lọc giá</button>
+        </div>
+
+        <ul id="list-products">
+            <div class="item do-uong">
+                    <a href="thittrau.html">
+                        <img src="./image/thit-trau-gac-bep-yen-bai-dam-da-phong-vi-reo-cao-tay-bac-3-1645889084.jpg" width="250px" alt="">
+                    </a>
+                        <div class="name">Thịt Trâu gác bếp </div>
+                        <div class="desc"> 500gram </div>
+                        <div class="price">460.000 VNĐ </div>
+            </div>
+            <div class="item do-uong">
+                <img src="./image/vn-11134259-7r98o-lwa45fymijmj6e@resize_ss640x400.jpg" width="250px" alt="">
+                    <div class="name">Món ăn 2</div>
+                    <div class="desc">Mô tả món ăn</div>
+                    <div class="price">20.000 VNĐ</div>
+            </div>
+            <div class="item do-uong">
+                <img src="./image/vn-11134259-7r98o-lwa45fymijmj6e@resize_ss640x400.jpg" width="250px" alt="">
+                    <div class="name">Món ăn 3</div>
+                    <div class="desc">Mô tả món ăn</div>
+                    <div class="price">25.000 VNĐ</div>
+            </div>
+            <div class="item do-uong">
+                <img src="./image/vn-11134259-7r98o-lwa45fymijmj6e@resize_ss640x400.jpg" width="250px" alt="">
+                    <div class="name">Món ăn 4</div>
+                    <div class="desc">Mô tả món ăn</div>
+                    <div class="price">40.000 VNĐ</div>
+            </div>
+            <div class="item do-uong">
+                <img src="./image/vn-11134259-7r98o-lwa45fymijmj6e@resize_ss640x400.jpg" width="250px" alt="">
+                    <div class="name">Món ăn 5</div>
+                    <div class="desc">Mô tả món ăn</div>
+                    <div class="price">50.000 VNĐ</div>
+            </div>
+            <div class="item do-an">
+                <a href="thittrau.html">
+                    <img src="./image/thit-trau-gac-bep-yen-bai-dam-da-phong-vi-reo-cao-tay-bac-3-1645889084.jpg" width="250px" alt="">
+                </a>
+                    <div class="name">Thịt Trâu gác bếp </div>
+                    <div class="desc"> 500gram </div>
+                    <div class="price">460.000 VNĐ </div>
+            </div>
+            <div class="item do-an">
+                <a href="thittrau.html">
+                    <img src="./image/thit-trau-gac-bep-yen-bai-dam-da-phong-vi-reo-cao-tay-bac-3-1645889084.jpg" width="250px" alt="">
+                </a>
+                    <div class="name">Thịt Trâu gác bếp </div>
+                    <div class="desc"> 500gram </div>
+                    <div class="price">460.000 VNĐ </div>
+            </div>
+            <div class="item do-an">
+                <a href="thittrau.html">
+                    <img src="./image/thit-trau-gac-bep-yen-bai-dam-da-phong-vi-reo-cao-tay-bac-3-1645889084.jpg" width="250px" alt="">
+                </a>
+                    <div class="name">Thịt Trâu gác bếp </div>
+                    <div class="desc"> 500gram </div>
+                    <div class="price">460.000 VNĐ </div>
+            </div>
+            <div class="item do-an">
+                <a href="thittrau.html">
+                    <img src="./image/thit-trau-gac-bep-yen-bai-dam-da-phong-vi-reo-cao-tay-bac-3-1645889084.jpg" width="250px" alt="">
+                </a>
+                    <div class="name">Thịt Trâu gác bếp </div>
+                    <div class="desc"> 500gram </div>
+                    <div class="price">460.000 VNĐ </div>
+            </div>
+            <div class="item do-an">
+                <a href="thittrau.html">
+                    <img src="./image/thit-trau-gac-bep-yen-bai-dam-da-phong-vi-reo-cao-tay-bac-3-1645889084.jpg" width="250px" alt="">
+                </a>
+                    <div class="name">Thịt Trâu gác bếp </div>
+                    <div class="desc"> 500gram </div>
+                    <div class="price">460.000 VNĐ </div>
+            </div>
+            <div class="item do-an">
+                <a href="thittrau.html">
+                    <img src="./image/thit-trau-gac-bep-yen-bai-dam-da-phong-vi-reo-cao-tay-bac-3-1645889084.jpg" width="250px" alt="">
+                </a>
+                    <div class="name">Thịt Trâu gác bếp </div>
+                    <div class="desc"> 500gram </div>
+                    <div class="price">460.000 VNĐ </div>
+            </div>
+            <div class="item trang-mieng">
+                <img src="./image/vn-11134259-7r98o-lwa45fymijmj6e@resize_ss640x400.jpg" width="250px" alt="">
+                    <div class="name">Món ăn 1</div>
+                    <div class="desc">Mô tả món ăn</div>
+                    <div class="price">20.000 VNĐ</div>
+            </div>
+            <div class="item trang-mieng">
+                <img src="./image/vn-11134259-7r98o-lwa45fymijmj6e@resize_ss640x400.jpg" width="250px" alt="">
+                    <div class="name">Món ăn 2</div>
+                    <div class="desc">Mô tả món ăn</div>
+                    <div class="price">100.000 VNĐ</div>
+            </div>
+            <div class="item trang-mieng">
+                <img src="./image/vn-11134259-7r98o-lwa45fymijmj6e@resize_ss640x400.jpg" width="250px" alt="">
+                    <div class="name">Món ăn 3</div>
+                    <div class="desc">Mô tả món ăn</div>
+                    <div class="price">10.000 VNĐ</div>
+            </div>
+            <div class="item trang-mieng">
+                <img src="./image/vn-11134259-7r98o-lwa45fymijmj6e@resize_ss640x400.jpg" width="250px" alt="">
+                    <div class="name">Món ăn 4</div>
+                    <div class="desc">Mô tả món ăn</div>
+                    <div class="price">25.000 VNĐ</div>
+            </div>
+        </ul> 
+        <div class="list-page">
+            <div class="item"><a href="#">1</a></div>
+            <div class="item"><a href="#">2</a></div>
+            <div class="item"><a href="#">3</a></div>
+            <div class="item"><a href="#">4</a></div>
+        </div>
+        <div class="contact-buttons">
+            <a href="https://www.facebook.com/huan.ta.7773631/about" target="_blank">
+              <img src="./image/87ba1a35-9696-4bfd-a417-1fa0e5f2c648.jpg" alt="Facebook">
+            </a>
+            <a href="https://zalo.me/s/qrwallet" target="_blank">
+              <img src="./image/th (1).jpg" alt="Zalo">
+            </a>
+            <a href="tel:+84335095011">
+              <img src="./image/th.jpg" alt="Phone">
+            </a>
+          </div>
+    </div>
+    <script src="sanpham.js"></script>
+</body>
+</html>

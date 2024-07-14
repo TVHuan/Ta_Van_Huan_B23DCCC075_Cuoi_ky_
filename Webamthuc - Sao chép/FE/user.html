@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký và Đăng nhập</title>
+    <link rel="stylesheet" href="user.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng ký tài khoản</h2>
+        <form id="registerForm">
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Đăng ký</button>
+        </form>
+        <div id="loginLink">
+            Đã có tài khoản? <a href="#" onclick="toggleForm('loginForm')">Đăng nhập ngay</a>
+        </div>
+    </div>
+
+    <div class="container" style="display: none;" id="loginForm">
+        <h2>Đăng nhập tài khoản</h2>
+        <form id="loginForm">
+            <label for="loginUsername">Tên đăng nhập:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+            <label for="loginPassword">Mật khẩu:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+            <button type="submit">Đăng nhập</button>
+        </form>
+        <div id="registerLink">
+            Chưa có tài khoản? <a href="#" onclick="toggleForm('registerForm')">Đăng ký ngay</a>
+        </div>
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>

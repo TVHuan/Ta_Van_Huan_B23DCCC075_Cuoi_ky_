@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #menu {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        #menu a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #menu a:hover {
+            background-color: #f18e47;
+            color: #fff;
+        }
+
+        #actions {
+            display: flex;
+            gap: 20px;
+        }
+
+        #actions img {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        /* Banner */
+        #banner {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #banner video {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Introduction */
+        #gioithieu {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #gioithieu h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        #gioithieu p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Chef Section */
+        #daubep {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #daubep h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        #daubep img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Buffet Section */
+        #buffet {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #buffet h2 {
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            color: #333;
+        }
+
+        #buffet p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #666;
+        }
+
+        /* Food Section */
+        #food {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #food h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #333;
+        }
+
+        #food img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+        }
+
+
+        .contact-buttons {
+    position: fixed;
+    bottom: 20px; /* Điều chỉnh khoảng cách dưới cùng */
+    right: 20px; /* Điều chỉnh khoảng cách bên phải */
+    z-index: 1000; /* Đảm bảo nút hiển thị trên các phần khác của trang */
+  }
+  
+  .contact-buttons a {
+    display: block;
+    margin-bottom: 10px; /* Điều chỉnh khoảng cách giữa các nút */
+  }
+  
+  .contact-buttons img {
+    width: 50px; /* Điều chỉnh kích thước biểu tượng */
+    height: auto;
+  }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="#" class="logo">
+            <img src="./image/Ảnh chụp màn hình 2024-06-16 181756.png" alt="Logo" width="120px">
+        </a>
+        <div id="menu">
+            <a href="index.html">Trang chủ</a>
+            <a href="sanpham.html">Sản phẩm</a>
+            <a href="thucdon.html" onclick="showSection('thucdon')">Thực Đơn</a>
+            <a href="dattiec.html" onclick="showSection('dattiec')">Đặt Tiệc</a>
+            <a href="blog.html">Blog</a>
+            <a href="lienhe.html">Liên hệ</a>
+        </div>
+        <div class="actions">
+            <div class="item">
+                <a href="user.html"><img src="./image/user.png" alt="User"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="./image/cart.png" alt="Cart"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="banner">
+        <video controls autoplay> 
+            <source src="./image/5631029050670.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div id="gioithieu">
+        <h1>Câu chuyện về nhà hàng chúng tôi</h1>
+        <p>
+            Toạ lạc trên khuôn viên rộng 12,000m2 tại phía Tây của thành phố Hà Nội, Khu Văn Hoá Ẩm Thực Sen Tây Hồ không chỉ 
+            là nơi dừng chân quen thuộc của những thực khách Hà Thành mà còn được biết đến với nhiều du khách từ khắp nơi trên thế giới.
+            Chúng tôi tin rằng, với sự cố gắng không ngừng nghỉ hơn 20 năm, sự tận tâm trong từng món
+            ăn và phong cách phục vụ chuyên nghiệp, Khu Văn hoá Ẩm thực Sen Tây Hồ tự hào là một điểm sáng trên 
+            bản đồ ẩm thực Việt Nam và thế giới.
+        </p>
+    </div>
+
+    <div id="daubep">
+        <h1>Đầu bếp đẳng cấp</h1>
+        <img src="./image/director.png" alt="Đầu bếp đẳng cấp">
+    </div>
+
+    <div id="buffet">
+        <h2>Khu buffet Hà Nội</h2>
+        <img src="./image/about-hn.png" alt="Khu buffet Hà Nội">
+        <p>
+            Khu Buffet Hà Nội - Với diện tích lên đến 400m2 phục vụ hơn 1,000 người cùng một lúc. Thực khách đến với khu vực này sẽ đắm mình vào không gian ấm cúng của một nét 
+            văn hoá đặc trưng miền Bắc cùng với đó là mùi hương ngào ngạt của những món ăn đậm chất Việt Nam.
+        </p>
+    </div>
+
+    <div id="food">
+        <h1>Hội tụ tinh hoa những món ăn đặc sắc</h1>
+        <img src="./image/food1.png" alt="Món ăn đặc sắc 1">
+        <img src="./image/food2.png" alt="Món ăn đặc sắc 2">
+        <img src="./image/food3.png" alt="Món ăn đặc sắc 3">
+        <img src="./image/food4.png" alt="Món ăn đặc sắc 4">
+        <img src="./image/food1 (1).png" alt="Món ăn đặc sắc 5">
+        <img src="./image/food6.png" alt="Món ăn đặc sắc 6">
+    </div>
+
+    <div class="contact-buttons">
+        <a href="https://www.facebook.com/huan.ta.7773631/about" target="_blank">
+          <img src="./image/87ba1a35-9696-4bfd-a417-1fa0e5f2c648.jpg" alt="Facebook">
+        </a>
+        <a href="https://zalo.me/s/qrwallet" target="_blank">
+          <img src="./image/th (1).jpg" alt="Zalo">
+        </a>
+        <a href="tel:+84335095011">
+          <img src="./image/th.jpg" alt="Phone">
+        </a>
+      </div>
+</body>
+</html>

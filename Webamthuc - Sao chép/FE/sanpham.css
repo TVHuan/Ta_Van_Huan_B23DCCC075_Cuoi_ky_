@@ -1,0 +1,249 @@
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+#menu a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#menu a:hover {
+    background-color: #f18e47;
+    color: #fff;
+}
+
+#actions {
+    display: flex;
+    gap: 20px;
+}
+
+#actions img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#wp-products {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5cb85c;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#search-bar button:hover {
+    background-color: #4cae4c;
+}
+
+#categories {
+    margin-bottom: 20px;
+}
+
+#categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#categories ul li {
+    position: relative;
+}
+
+#categories ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px 15px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#categories ul li a:hover {
+    background: #eee;
+}
+
+.sub-categories {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#categories ul li:hover .sub-categories {
+    display: block;
+}
+
+#price-filter {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#price-filter label {
+    margin-right: 10px;
+}
+
+#price-range {
+    width: 70%;
+    margin-right: 10px;
+}
+
+#price-display {
+    font-weight: bold;
+    color: #e74c3c;
+    margin-right: 10px;
+}
+
+#list-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.name {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+.desc {
+    color: #666;
+    margin: 10px 0;
+}
+
+.price {
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list-page {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.list-page .item {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.list-page .item a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.list-page .item a:hover {
+    background: #eee;
+}
+
+
+
+
+
+.contact-buttons {
+    position: fixed;
+    bottom: 20px; /* Điều chỉnh khoảng cách dưới cùng */
+    right: 20px; /* Điều chỉnh khoảng cách bên phải */
+    z-index: 1000; /* Đảm bảo nút hiển thị trên các phần khác của trang */
+  }
+  
+  .contact-buttons a {
+    display: block;
+    margin-bottom: 10px; /* Điều chỉnh khoảng cách giữa các nút */
+  }
+  
+  .contact-buttons img {
+    width: 50px; /* Điều chỉnh kích thước biểu tượng */
+    height: auto;
+  }
